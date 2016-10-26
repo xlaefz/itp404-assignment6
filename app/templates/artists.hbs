@@ -1,14 +1,14 @@
-<div class = "container">
-    <div class = "row">
-      <div class = "col-md-4">
+<div class="container">
+    <div class="row">
+      <div class="col-md-4">
         {{#each model.artists as |artist|}}
-        {{link=to 'artists.artist' artist.id}}
+        {{#link-to 'artists.artist' artist.id}}
           {{artist.name}}
         {{/link-to}}
         {{/each}}
       </div>
-      <div class = "col-md-8">
+      <div class="col-md-8">
         {{outlet}}
       </div>
     </div>
-  </div>
+</div>

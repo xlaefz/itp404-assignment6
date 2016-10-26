@@ -6,5 +6,6 @@ export default Ember.Route.extend({
       type: 'get',
       url: 'http://itp-api.herokuapp.com/api/artists'
     });
+    return promise;
   }
 });
